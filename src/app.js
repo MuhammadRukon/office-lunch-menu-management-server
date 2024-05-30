@@ -2,10 +2,12 @@ const express = require("express");
 const applyMiddleware = require("./middleware/applyMiddleware");
 const app = express();
 const lunchRoutes = require("./routes/lunch/index.js")
+const authenticationRoutes = require("./routes/authentication/index.js")
 
 applyMiddleware(app);
 
 app.use(lunchRoutes)
+app.use(authenticationRoutes)
 // server health
 app.get('/', (req, res) => {
     res.send("root route");
