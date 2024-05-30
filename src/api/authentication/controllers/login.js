@@ -8,7 +8,7 @@ const login = async(req, res)=>{
     if(response?.rows?.length){
         const data = (response.rows[0]);
         if(data.email === email && data.pass === password){
-            const responseData = {email: data.email, role: data.userrole, name: data.username, status: 200}
+            const responseData = { userId: data.id, email: data.email, role: data.userrole, name: data.username, status: 200}
             res.send(responseData);
         }
         
