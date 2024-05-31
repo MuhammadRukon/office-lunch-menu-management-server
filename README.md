@@ -20,6 +20,7 @@ step 5: run the project - "npm run dev"
 - make sure to update the .env files LOCAL_CLIENT's value with the frontend running port
 - make sure to update the .env files USER's value with your username name
 - make sure to update the .env files DB_PASSWORD's value with your password
+- I have set it up so that the project can automatically migrate and set up the database. You do not need to create the database and tables manually.
 
 ## Technologies used
 
