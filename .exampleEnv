@@ -1,0 +1,7 @@
+USER= "*replace with your username*"
+DB_LOCAL= "lunch_management" 
+DB_PASSWORD = "*replace with your password*"
+DB_HOST = "localhost"
+DB_PORT = 5432
+
+LOCAL_CLIENT = "http://localhost:5173"
